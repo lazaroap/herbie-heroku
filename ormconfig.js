@@ -3,12 +3,12 @@ module.exports = {
   "type": "postgres",
   "url": process.env.DATABASE_URL,
   "entities": [
-    "dist/models/**/*.ts"
+    "dist/models/**/*.js"
    // "src/models/**/*.ts"
  ],
  "migrations": [
   //"src/migrations/**/*.ts"
-  "src/migrations/**/*.ts"
+  "dist/migrations/**/*.js"
 ],
  "cli":{
   "migrationsDir": [
